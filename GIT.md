@@ -6,7 +6,7 @@
 
 ## sets up Git with your email
 
-`git config --global user.email "<your-email-address>"``
+`git config --global user.email "<your-email-address>"`
 
 ## makes sure that Git output is coloured
 
