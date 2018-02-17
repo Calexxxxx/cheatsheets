@@ -2,35 +2,49 @@
 
 ## sets up Git with your name
 
-## `git config --global user.name "<Your-Full-Name>"`
+`git config --global user.name "<Your-Full-Name>"`
+
+---
 
 ## sets up Git with your email
 
-## `git config --global user.email "<your-email-address>"`
+`git config --global user.email "<your-email-address>"`
+
+---
 
 ## makes sure that Git output is coloured
 
-## `git config --global color.ui auto`
+`git config --global color.ui auto`
+
+---
 
 ## displays the original state in a conflict
 
 `git config --global merge.conflictstyle diff3`
 
-## `git config --list`
+`git config --list`
+
+---
 
 # Editor setups
 
 ## atom editor setup
 
-## `git config --global core.editor "atom --wait"`
+`git config --global core.editor "atom --wait"`
+
+---
 
 ## Sublime text setup
 
-## `git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"`
+`git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"`
+
+---
 
 ## VSCode Setup
 
-## `git config --global core.editor "code --wait"`
+`git config --global core.editor "code --wait"`
+
+---
 
 ## create new repo local
 
@@ -40,7 +54,9 @@ Use the git init command to create a new, empty repository in the current direct
 
 `$ git init`
 
-## Running this command creates a hidden .git directory. This .git directory is the brain/storage center for the repository. It holds all of the configuration files and directories and is where all of the commits are stored.
+Running this command creates a hidden .git directory. This .git directory is the brain/storage center for the repository. It holds all of the configuration files and directories and is where all of the commits are stored.
+
+---
 
 ## clone a repo
 
@@ -160,7 +176,9 @@ The git show command will show only one commit. So don't get alarmed when you ca
 
 `git add .` adds all to the staging area
 
-## `git add <file_name>/<folder-name>` adds the file/folder to the staging area
+`git add <file_name>/<folder-name>` adds the file/folder to the staging area
+
+---
 
 ## git commit
 
