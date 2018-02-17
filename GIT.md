@@ -156,7 +156,7 @@ The git show command will show only one commit. So don't get alarmed when you ca
 
 ## git commit
 
-`git commit` opens up the editor is this is set. Look at [editor setups](#Editor-setups)
+`git commit` opens up the editor is this is set. Look at [editor setups](#editor-setups)
 
 `git commit -m "<your-message-here>"` bypasses the editor and you can pass your commit directly.
 
