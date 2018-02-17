@@ -186,8 +186,8 @@ Let's say that you add 50 images to your project, but want Git to ignore all of 
 Globbing lets you use special characters to match patterns/characters. In the .gitignore file, you can use the following:
 
 * blank lines can be used for spacing
-* # - marks line as a comment
-* * * matches 0 or more characters
+* \# - marks line as a comment
+* \* \* matches 0 or more characters
 * ? - matches 1 character
 * [abc] - matches a, b, or c
 * \*\* - matches nested directories - a/\*\*/z matches
