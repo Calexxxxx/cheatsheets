@@ -2,35 +2,35 @@
 
 ## sets up Git with your name
 
-`git config --global user.name "<Your-Full-Name>"`
+## `git config --global user.name "<Your-Full-Name>"`
 
 ## sets up Git with your email
 
-`git config --global user.email "<your-email-address>"`
+## `git config --global user.email "<your-email-address>"`
 
 ## makes sure that Git output is coloured
 
-`git config --global color.ui auto`
+## `git config --global color.ui auto`
 
 ## displays the original state in a conflict
 
 `git config --global merge.conflictstyle diff3`
 
-`git config --list`
+## `git config --list`
 
 # Editor setups
 
 ## atom editor setup
 
-`git config --global core.editor "atom --wait"`
+## `git config --global core.editor "atom --wait"`
 
 ## Sublime text setup
 
-`git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"`
+## `git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"`
 
 ## VSCode Setup
 
-`git config --global core.editor "code --wait"`
+## `git config --global core.editor "code --wait"`
 
 ## create new repo local
 
@@ -40,7 +40,7 @@ Use the git init command to create a new, empty repository in the current direct
 
 `$ git init`
 
-Running this command creates a hidden .git directory. This .git directory is the brain/storage center for the repository. It holds all of the configuration files and directories and is where all of the commits are stored.
+## Running this command creates a hidden .git directory. This .git directory is the brain/storage center for the repository. It holds all of the configuration files and directories and is where all of the commits are stored.
 
 ## clone a repo
 
@@ -58,6 +58,8 @@ This command:
 3. can be given a second argument that will be used as the name of the directory
 4. will create the new repository inside of the current working directory
 
+---
+
 ## check status of files
 
 `git status`
@@ -67,6 +69,8 @@ This command will:
 1. tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
 2. files that Git is tracking that have been modified
 3. a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)
+
+---
 
 ## git log
 
@@ -133,6 +137,8 @@ Git uses the command line pager, Less, to page through all of the information. T
 4. to scroll up by a page, use b or the Page Up button
 5. to quit, use q
 
+---
+
 ## git show
 
 `git show`
@@ -146,13 +152,15 @@ The git show command will show only one commit. So don't get alarmed when you ca
 4. the commit message
 5. the patch information
 
+---
+
 ## git add
 
 `git add -a` adds all to staging area
 
 `git add .` adds all to the staging area
 
-`git add <file_name>/<folder-name>` adds the file/folder to the staging area
+## `git add <file_name>/<folder-name>` adds the file/folder to the staging area
 
 ## git commit
 
@@ -172,11 +180,13 @@ This command:
 3. save the file after adding a commit message
 4. close the editor to make the commit
 
+---
+
 ## git diff
 
 `git diff` shows the changes since your last commit.
 
-Markup : ----
+---
 
 # .gitignore
 
@@ -196,7 +206,7 @@ Globbing lets you use special characters to match patterns/characters. In the .g
   * a/b/c/z
     So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to .gitignore to have Git ignore all 50 images.
 
-Markup : ----
+---
 
 # Good commit messages
 
@@ -216,7 +226,7 @@ Markup : ----
 
 A good starting point is `"This commit will..."`
 
-Markup : ----
+---
 
 # .Git Directory Contents
 
