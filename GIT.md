@@ -206,6 +206,43 @@ This command:
 
 ---
 
+## git tag
+
+`git tag`
+
+this will verify the tag
+
+`git tag -a v1.0`
+
+this will add a tag to the branch your on at that moment.
+
+`git tag -a v1.0 <SHA>`
+
+add a tag to a different commit
+
+`git tag -d v1.0` or `git tag --delete v1.0`
+
+this will delete the tag useful if you misspelled
+
+This command will:
+
+1. add a tag to the most recent commit
+2. add a tag to a specific commit if a SHA is passed
+
+---
+
+## git branch
+
+---
+
+## git checkout
+
+---
+
+## git merge
+
+---
+
 # .gitignore
 
 Globbing Crash Course
