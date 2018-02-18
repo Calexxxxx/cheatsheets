@@ -209,6 +209,19 @@ This command:
 3. save the file after adding a commit message
 4. close the editor to make the commit
 
+`git commit --amend`
+
+#### Add Forgotten Files To Commit
+
+Alternatively, git commit --amend will let you include files (or changes to files) you might've forgotten to include. Let's say you've updated the color of all navigation links across your entire website. You committed that change and thought you were done. But then you discovered that a special nav link buried deep on a page doesn't have the new color. You could just make a new commit that updates the color for that one link, but that would have two back-to-back commits that do practically the exact same thing (change link colors).
+
+Instead, you can amend the last commit (the one that updated the color of all of the other links) to include this forgotten one. To do get the forgotten link included, just:
+
+1. edit the file(s)
+2. save the file(s)
+3. stage the file(s)
+4. and run git commit --amend
+
 ---
 
 ## git diff
@@ -298,6 +311,14 @@ There are two types of merges:
 2. the regular type of merge
    1. two divergent branches are combined
    2. a merge commit is created
+
+---
+
+## git revert
+
+---
+
+## git reset
 
 ---
 
