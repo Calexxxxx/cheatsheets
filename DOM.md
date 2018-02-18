@@ -41,3 +41,14 @@ The DOM is standardised by the W3C. There are a number of specifications that ma
 * Style Specification
 * Validation Specification
 * Load and Save Specification
+
+# Select an element by id
+
+`document.getElementById(<id-name>);`
+
+There are a couple of important things to keep in mind about this method:
+
+* it is called on the document object
+* it returns a single item
+
+[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
