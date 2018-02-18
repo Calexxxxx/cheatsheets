@@ -164,6 +164,22 @@ The --graph flag adds the bullets and lines to the leftmost part of the output. 
 
 Running this command will show all branches and commits in the repository
 
+`git shortlog`
+
+git shortlog displays an alphabetical list of names and the commit messages that go along with them. If we just want to see just the number of commits that each developer has made, we can add a couple of flags: -s to show just the number of commits (rather than each commit's message) and -n to sort them numerically (rather than alphabetically by author name).
+
+`git shortlog -s -n`
+
+shows short version
+
+`git log --author=<author-name>` or `git log --author="<author-name>"`
+
+will show only the commits made by that author
+
+`git log --grep=<filter>`
+
+will show all commits filtered on the grep input
+
 ---
 
 ## git show
