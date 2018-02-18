@@ -6,14 +6,14 @@ The information used in the sheet is from the [udacity](https://udacity.com) git
 # Table of Contents
 
 1. [First Time setup](#first-time-setip)
-   ..1. [User name](##sets-up-git-with-your-name)
-   ..2. [Email setup](##sets-up-git-with-your-email)
-   ..3. [Colour setup](##makes-sure-that-git-output-is-coloured)
-   ..4. [Conflict setup](##displays-the-original-state-in-confilct)
+   1. [User name](##sets-up-git-with-your-name)
+   2. [Email setup](##sets-up-git-with-your-email)
+   3. [Colour setup](##makes-sure-that-git-output-is-coloured)
+   4. [Conflict setup](##displays-the-original-state-in-confilct)
 1. [editor setups](#editor-setups)
-   ..1. [atom](##atom-editor-setup)
-   ..2. [sublime](##sublime-text-setup)
-   ..3. [vscode](##vscode-setup)
+   1. [atom](##atom-editor-setup)
+   2. [sublime](##sublime-text-setup)
+   3. [vscode](##vscode-setup)
 
 # First time use setup
 
