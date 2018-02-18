@@ -460,12 +460,14 @@ When git fetch is run, the following things happen:
 `git rebase -i <branch>` or `git rebase -i <number-of-commits>`
 
 **The Rebase Command**
-The git rebase command will move commits to have a new base. In the command git rebase -i HEAD~3, we're telling Git to use HEAD~3 as the base where all of the other commits (HEAD~2, HEAD~1, and HEAD) will connect to.
+
+The git rebase command will move commits to have a new base. In the command git rebase -i HEAD\~3, we're telling Git to use HEAD~3 as the base where all of the other commits (HEAD\~2, HEAD\~1, and HEAD) will connect to.
 
 The -i in the command stands for "interactive". You can perform a rebase in a non-interactive mode. While you're learning how to rebase, though, I definitely recommend that you do interactive rebasing.
 
 **Ancestry References**
-As a brief refresher, HEAD indicates your current location (it could point to several things, but typically it'll either point to a branch name or directly to a commit's SHA). The ~3 part means "three before", so HEAD~3 will be the commit that's three before the one you're currently on. We're using this relative reference to a commit in the git rebase command.
+
+As a brief refresher, HEAD indicates your current location (it could point to several things, but typically it'll either point to a branch name or directly to a commit's SHA). The \~3 part means "three before", so HEAD\~3 will be the commit that's three before the one you're currently on. We're using this relative reference to a commit in the git rebase command.
 
 # .gitignore
 
