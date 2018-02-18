@@ -3,6 +3,8 @@
 This sheet is made for reference about git and all useful shell commands.
 The information used in the sheet is from the [udacity](https://udacity.com) git and github course.
 
+---
+
 # Table of Contents
 
 1. [First Time setup](#first-time-setup)
@@ -10,10 +12,36 @@ The information used in the sheet is from the [udacity](https://udacity.com) git
    2. [Email setup](#sets-up-git-with-your-email)
    3. [Colour setup](#makes-sure-that-git-output-is-coloured)
    4. [Conflict setup](#displays-the-original-state-in-confilct)
-1. [editor setups](#editor-setups)
+2. [editor setups](#editor-setups)
    1. [atom](#atom-editor-setup)
    2. [sublime](#sublime-text-setup)
    3. [vscode](#vscode-setup)
+3. [Git basic commands](#git-basic-commands)
+   1. [git repo](#create-new-repo-local)
+   2. [git repo](#clone-a-repo)
+   3. [git status](#check-status-of-files)
+   4. [git log](#git-log)
+   5. [git show](#git-show)
+   6. [git add](#git-add)
+   7. [git commit](#git-commit)
+   8. [git diff](#git-diff)
+   9. [git tag](#git-tag)
+   10. [git branch](#git-branch)
+   11. [git checkout](#git-checkout)
+   12. [git merge](#git-merge)
+   13. [git revert](#git-revert)
+   14. [git reset](#git-reset)
+4. [Remote repository](#remote-repository)
+   1. [git remote](#git-remote)
+   2. [git push](#git-push)
+   3. [git pull](#git-pull)
+   4. [git fetch](#git-fetch)
+   5. [git rebase](#git-rebase)
+5. [.gitigonore](#.gitignore)
+6. [Good commits](#good-commit-messages)
+7. [.git directory contents](#.git-directory-contents)
+
+---
 
 # First time use setup
 
@@ -21,17 +49,23 @@ The information used in the sheet is from the [udacity](https://udacity.com) git
 
 `git config --global user.name "<Your-Full-Name>"`
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## sets up Git with your email
 
 `git config --global user.email "<your-email-address>"`
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## makes sure that Git output is coloured
 
 `git config --global color.ui auto`
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -41,6 +75,8 @@ The information used in the sheet is from the [udacity](https://udacity.com) git
 
 `git config --list`
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 # Editor setups
@@ -49,11 +85,15 @@ The information used in the sheet is from the [udacity](https://udacity.com) git
 
 `git config --global core.editor "atom --wait"`
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## Sublime text setup
 
 `git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"`
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -61,7 +101,11 @@ The information used in the sheet is from the [udacity](https://udacity.com) git
 
 `git config --global core.editor "code --wait"`
 
+[Back to table of contents](#table-of-contents)
+
 ---
+
+# Git basic commands
 
 ## create new repo local
 
@@ -72,6 +116,8 @@ Use the git init command to create a new, empty repository in the current direct
 `$ git init`
 
 Running this command creates a hidden .git directory. This .git directory is the brain/storage center for the repository. It holds all of the configuration files and directories and is where all of the commits are stored.
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -91,6 +137,8 @@ This command:
 3. can be given a second argument that will be used as the name of the directory
 4. will create the new repository inside of the current working directory
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## check status of files
@@ -102,6 +150,8 @@ This command will:
 1. tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
 2. files that Git is tracking that have been modified
 3. a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -192,6 +242,8 @@ will show only the commits made by that author
 
 will show all commits filtered on the grep input
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## git show
@@ -207,6 +259,8 @@ The git show command will show only one commit. So don't get alarmed when you ca
 4. the commit message
 5. the patch information
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## git add
@@ -216,6 +270,8 @@ The git show command will show only one commit. So don't get alarmed when you ca
 `git add .` adds all to the staging area
 
 `git add <file_name>/<folder-name>` adds the file/folder to the staging area
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -250,11 +306,15 @@ Instead, you can amend the last commit (the one that updated the color of all of
 3. stage the file(s)
 4. and run git commit --amend
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## git diff
 
 `git diff` shows the changes since your last commit.
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -281,6 +341,8 @@ This command will:
 1. add a tag to the most recent commit
 2. add a tag to a specific commit if a SHA is passed
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## git branch
@@ -303,6 +365,8 @@ It can be used to:
 2. create new branches
 3. delete branches
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## git checkout
@@ -314,6 +378,8 @@ will switch to that branch
 `git checkout -b <branch-name>`
 
 this will create a new branch and switch to it
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -340,6 +406,8 @@ There are two types of merges:
    1. two divergent branches are combined
    2. a merge commit is created
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 ## git revert
@@ -350,6 +418,8 @@ This command:
 
 1. will undo the changes that were made by the provided commit
 2. creates a new commit to record the change
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -420,6 +490,8 @@ git checkout -- index.html
 git merge backup
 ```
 
+[Back to table of contents](#table-of-contents)
+
 ---
 
 # Remote repository
@@ -429,6 +501,8 @@ git merge backup
 Remember that it's incredibly helpful to make all of your commits on descriptively named topic branches. Branches help isolate unrelated changes from each other.
 
 So when you're collaborating with other developers make sure to create a new branch that has a descriptive name that describes what changes it contains.
+
+---
 
 ## git remote
 
@@ -446,11 +520,19 @@ This will add a path to the remote repository
 
 `git remote rename <old-remote> <new-remote>`
 
+[Back to table of contents](#table-of-contents)
+
+---
+
 ## git push
 
 `git push <remote-name> <branch-name>`
 
 The git push command is used to send commits from a local repository to a remote repository.
+
+[Back to table of contents](#table-of-contents)
+
+---
 
 ## git pull
 
@@ -462,7 +544,11 @@ When git pull is run, the following things happen:
 2. the local tracking branch (origin/master) is moved to point to the most recent commit
 3. the local tracking branch (origin/master) is merged into the local branch (master)
 
-## git pull vs fetch
+[Back to table of contents](#table-of-contents)
+
+---
+
+## git fetch
 
 `git fetch origin master`
 
@@ -470,6 +556,10 @@ When git fetch is run, the following things happen:
 
 1. the commit(s) on the remote branch are copied to the local repository
 2. the local tracking branch (e.g. origin/master) is moved to point to the most recent commit
+
+[Back to table of contents](#table-of-contents)
+
+---
 
 ## git rebase
 
@@ -484,6 +574,8 @@ The -i in the command stands for "interactive". You can perform a rebase in a no
 **Ancestry References**
 
 As a brief refresher, HEAD indicates your current location (it could point to several things, but typically it'll either point to a branch name or directly to a commit's SHA). The \~3 part means "three before", so HEAD\~3 will be the commit that's three before the one you're currently on. We're using this relative reference to a commit in the git rebase command.
+
+[Back to table of contents](#table-of-contents)
 
 # .gitignore
 
@@ -502,6 +594,8 @@ Globbing lets you use special characters to match patterns/characters. In the .g
   * a/b/z
   * a/b/c/z
     So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to .gitignore to have Git ignore all 50 images.
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -522,6 +616,8 @@ Globbing lets you use special characters to match patterns/characters. In the .g
 * e.g. "make the background color pink and increase the size of the sidebar"
 
 A good starting point is `"This commit will..."`
+
+[Back to table of contents](#table-of-contents)
 
 ---
 
@@ -546,3 +642,5 @@ For example, let's say you set that the global configuration for Git uses your p
 
 * **objects directory** - this directory will store all of the commits we make
   refs directory - this directory holds pointers to commits (basically the "branches" and "tags")
+
+[Back to table of contents](#table-of-contents)
