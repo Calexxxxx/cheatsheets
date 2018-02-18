@@ -27,3 +27,17 @@ Document Object Model
 Object Model of the Document!
 
 Remember that a JavaScript object is a tree-like structure that has properties and values. So the DOM can be accessed using a special object provided by the browser: document
+
+The document object is provided by the browser and is a representation of the HTML document. This object is not provided by the JavaScript language. ECMAScript is the language specification that JavaScript is based on, and it only references the document object model in one place, in its "Global Object" section:
+
+> In addition to the properties defined in this specification the global object may have additional host defined properties. This may include a property whose value is the global object itself; for example, in the HTML document object model the window property of the global object is the global object itself. (source)
+
+Basically, this says that the document object is not part of JavaScript, but is expected to already exist and be freely accessible to JavaScript code.
+
+The DOM is standardised by the W3C. There are a number of specifications that make up the DOM, here are few:
+
+* Core Specification
+* Events Specification
+* Style Specification
+* Validation Specification
+* Load and Save Specification
