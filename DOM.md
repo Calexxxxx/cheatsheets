@@ -51,4 +51,12 @@ There are a couple of important things to keep in mind about this method:
 * it is called on the document object
 * it returns a single item
 
-[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById){:target="\_blank"}
+
+# Select an element by class
+
+`document.getElementsByClassName(<class-name>);`
+
+Similarly to .getElementById(), if we ran the code above in the console, we wouldn't get anything, because we did not tell it the class to search for! Also just like .getElementById(), .getElementsByClassName() is expecting that we call it with a string of the class we want it to search for/return:
+
+[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName){:target="\_blank"}
