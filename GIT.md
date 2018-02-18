@@ -420,6 +420,14 @@ The git push command is used to send commits from a local repository to a remote
 
 ## git pull
 
+`git pull <remote-name> <branch-name>`
+
+When git pull is run, the following things happen:
+
+1. the commit(s) on the remote branch are copied to the local repository
+2. the local tracking branch (origin/master) is moved to point to the most recent commit
+3. the local tracking branch (origin/master) is merged into the local branch (master)
+
 # .gitignore
 
 Globbing Crash Course
