@@ -1,3 +1,8 @@
+# Git Cheat Sheet
+
+This sheet is made for reference about git and all useful shell commands.
+The information used in the sheet is from the [udacity](https://udacity.com) git and github course.
+
 # First time use setup
 
 ## sets up Git with your name
@@ -153,6 +158,12 @@ Git uses the command line pager, Less, to page through all of the information. T
 4. to scroll up by a page, use b or the Page Up button
 5. to quit, use q
 
+`git log --oneline --decorate --graph --all`
+
+The --graph flag adds the bullets and lines to the leftmost part of the output. This shows the actual branching that's happening. The --all flag is what displays all of the branches in the repository.
+
+Running this command will show all branches and commits in the repository
+
 ---
 
 ## git show
@@ -233,13 +244,60 @@ This command will:
 
 ## git branch
 
+`git branch`
+
+displays a list of all branches
+
+`git branch <branch-name>`
+
+creates a new branch but you stay on the branch your on
+
+`git branch -d <branch-name>`
+
+this will delete the branch
+
+It can be used to:
+
+1. list all branch names in the repository
+2. create new branches
+3. delete branches
+
 ---
 
 ## git checkout
 
+`git checkout <branch-name>`
+
+will switch to that branch
+
+`git checkout -b <branch-name>`
+
+this will create a new branch and switch to it
+
 ---
 
 ## git merge
+
+`git merge <name-of-branch-to-merge-in>`
+
+this will merge the branches
+When a merge happens, Git will:
+
+1. look at the branches that it's going to merge
+2. look back along the branch's history to find a single commit that both branches have in their commit history
+3. combine the lines of code that were changed on the separate branches together
+4. makes a commit to record the merge
+
+`git reset --hard HEAD^`
+
+This command is used to undo a merge "e.g. If you merged the wrong branch"
+
+There are two types of merges:
+
+1. Fast-forward merge – the branch being merged in must be ahead of the checked out branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch.
+2. the regular type of merge
+   1. two divergent branches are combined
+   2. a merge commit is created
 
 ---
 
