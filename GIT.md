@@ -428,6 +428,8 @@ will show all remotes + the paths
 
 This will add a path to the remote repository
 
+`git remote rename <old-remote> <new-remote>`
+
 ## git push
 
 `git push <remote-name> <branch-name>`
@@ -452,6 +454,18 @@ When git fetch is run, the following things happen:
 
 1. the commit(s) on the remote branch are copied to the local repository
 2. the local tracking branch (e.g. origin/master) is moved to point to the most recent commit
+
+## git rebase
+
+`git rebase -i <branch>` or `git rebase -i <number-of-commits>`
+
+**The Rebase Command**
+The git rebase command will move commits to have a new base. In the command git rebase -i HEAD~3, we're telling Git to use HEAD~3 as the base where all of the other commits (HEAD~2, HEAD~1, and HEAD) will connect to.
+
+The -i in the command stands for "interactive". You can perform a rebase in a non-interactive mode. While you're learning how to rebase, though, I definitely recommend that you do interactive rebasing.
+
+**Ancestry References**
+As a brief refresher, HEAD indicates your current location (it could point to several things, but typically it'll either point to a branch name or directly to a commit's SHA). The ~3 part means "three before", so HEAD~3 will be the commit that's three before the one you're currently on. We're using this relative reference to a commit in the git rebase command.
 
 # .gitignore
 
