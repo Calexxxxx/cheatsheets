@@ -362,10 +362,14 @@ the parent commit – the following indicate the parent commit of the current co
 * HEAD^
 * HEAD~
 * HEAD~1
-  the grandparent commit – the following indicate the grandparent commit of the current commit
+
+the grandparent commit – the following indicate the grandparent commit of the current commit
+
 * HEAD^^
 * HEAD~2
-  the great-grandparent commit – the following indicate the great-grandparent commit of the current commit
+
+the great-grandparent commit – the following indicate the great-grandparent commit of the current commit
+
 * HEAD^^^
 * HEAD~3
 
