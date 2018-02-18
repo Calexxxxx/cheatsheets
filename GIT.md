@@ -385,8 +385,6 @@ git checkout -- index.html
 git merge backup
 ```
 
-this will
-
 ---
 
 # .gitignore
