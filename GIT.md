@@ -3,6 +3,18 @@
 This sheet is made for reference about git and all useful shell commands.
 The information used in the sheet is from the [udacity](https://udacity.com) git and github course.
 
+# Table of Contents
+
+1. [First Time setup](#first-time-setip)
+1. [User name](##sets-up-git-with-your-name)
+1. [Email setup](##sets-up-git-with-your-email)
+1. [Colour setup](##makes-sure-that-git-output-is-coloured)
+1. [Conflict setup](##displays-the-original-state-in-confilct)
+1. [editor setups](#editor-setups)
+1. [atom](##atom-editor-setup)
+1. [sublime](##sublime-text-setup)
+1. [vscode](##vscode-setup)
+
 # First time use setup
 
 ## sets up Git with your name
