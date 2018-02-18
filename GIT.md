@@ -327,6 +327,66 @@ This command:
 
 ## git reset
 
+⚠️ **Resetting Is Dangerous** ⚠️
+You've got to be careful with Git's resetting capabilities. This is one of the few commands that lets you erase commits from the repository. If a commit is no longer in the repository, then its content is gone.
+
+To alleviate the stress a bit, Git does keep track of everything for about 30 days before it completely erases anything. To access this content, you'll need to use the git reflog command.
+
+**Relative Commit References**
+
+There are special characters called "Ancestry References" that we can use to tell Git about these relative references. Those characters are:
+
+* \^ – indicates the parent commit
+* \~ – indicates the first parent commit
+  Here's how we can refer to previous commits:
+
+the parent commit – the following indicate the parent commit of the current commit
+
+* HEAD^
+* HEAD~
+* HEAD~1
+  the grandparent commit – the following indicate the grandparent commit of the current commit
+* HEAD^^
+* HEAD~2
+  the great-grandparent commit – the following indicate the great-grandparent commit of the current commit
+* HEAD^^^
+* HEAD~3
+
+`git reset <SHA>`
+
+it can be used to:
+
+1. move the HEAD and current branch pointer to the referenced commit
+2. erase commits
+3. move committed changes to the staging index
+4. unstage committed changes
+
+**Git Reset's Flags**
+The way that Git determines if it erases, stages previously committed changes, or unstages previously committed changes is by the flag that's used. The flags are:
+
+1. --mixed default working directory
+2. --soft move changes to staging index
+3. --hard move changes to trash
+
+**Backup your branch**
+
+`git branch backup`
+
+this will make a backup
+
+💡 **Back To Normal** 💡
+If you created the backup branch prior to resetting anything, then you can easily get back to having the master branch point to the same commit as the backup branch. You'll just need to:
+
+remove the uncommitted changes from the working directory
+merge backup into master (which will cause a Fast-forward merge and move master up to the same point as backup)
+
+```
+git checkout -- index.html
+git merge backup
+```
+
+this will
+
 ---
 
 # .gitignore
