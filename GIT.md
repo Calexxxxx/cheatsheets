@@ -414,6 +414,10 @@ This will add a path to the remote repository
 
 ## git push
 
+`git push <remote-name> <branch-name>`
+
+The git push command is used to send commits from a local repository to a remote repository.
+
 ## git pull
 
 # .gitignore
