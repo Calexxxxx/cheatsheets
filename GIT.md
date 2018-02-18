@@ -316,6 +316,13 @@ There are two types of merges:
 
 ## git revert
 
+`git revert <SHA>`
+
+This command:
+
+1. will undo the changes that were made by the provided commit
+2. creates a new commit to record the change
+
 ---
 
 ## git reset
