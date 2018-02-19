@@ -81,3 +81,20 @@ There are a couple of important things to keep in mind about this method:
 Similarly to .getElementById(), if we ran the code above in the console, we wouldn't get anything, because we did not tell it the class to search for! Also just like .getElementById(), .getElementsByClassName() is expecting that we call it with a string of the class we want it to search for/return:
 
 [Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
+
+# querySelector() & querySelectorAll()
+
+`document.querySelector('<class>/<id>/<tag>');`
+
+returns one element
+
+[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+
+`document.querySelectorAll('<class>/<id>/<tag>');`
+
+returns all elements
+
+[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+
+⚠️ **.querySelector() Returns A Single Element** ⚠️
+I want to point out one potentially tricky thing - the .querySelector() method only returns one element. This makes sense if you use it to search for an element by ID. However, even though .getElementsByClassName() and .getElementsByTagName() both return a list of multiple elements, using .querySelector() with a class selector or a tag selector will still only return the first item it finds.
