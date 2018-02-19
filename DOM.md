@@ -1,3 +1,7 @@
+# Useful Links
+
+[Web Api](https://developer.mozilla.org/en-US/docs/Web/API)
+
 # The DOM
 
 When you request a website, no matter what backend language is powering that website, it will respond with HTML. The browser receives a stream of HTML. The bytes are run through a complicated (but fully documented) parsing process that determines the different characters (e.g. the start tag character <, an attribute like href, a closing angle bracket like >). After parsing has occurred, a process called tokenization. Tokenization takes one character at a time and builds up tokens. The tokens are:
@@ -42,6 +46,21 @@ The DOM is standardised by the W3C. There are a number of specifications that ma
 * Validation Specification
 * Load and Save Specification
 
+# Interface
+
+⚠️ **Interface vs User Interface** ⚠️
+The word "interface" might be an unclear word right now, and that's ok. I do want to make sure that you're not connecting this "interface" with a user interface (UI) or a graphical user interface (GUI).
+
+Our use of "interface" face is not related to the either a UI or a GUI. Our use of "interface" is a technical, computer science word for a list of properties and methods that are inherited.
+
+Node (with a capital "N"!) is a blueprint that contains information about all of the properties and methods for real nodes (with a lowercase "n"!). If you're not used to them, the words "interface", "property", and "method" can be kind of cryptic at first. Just remember that:
+
+* interface = blueprint
+* properties = data
+* methods = functionality
+
+[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+
 # Select an element by id
 
 `document.getElementById(<id-name>);`
@@ -53,9 +72,11 @@ There are a couple of important things to keep in mind about this method:
 
 [Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
-# Select an element by class
+# Select an elements by class or tag
 
 `document.getElementsByClassName(<class-name>);`
+
+`document.getElementsByTagName('<tag-name>');`
 
 Similarly to .getElementById(), if we ran the code above in the console, we wouldn't get anything, because we did not tell it the class to search for! Also just like .getElementById(), .getElementsByClassName() is expecting that we call it with a string of the class we want it to search for/return:
 
