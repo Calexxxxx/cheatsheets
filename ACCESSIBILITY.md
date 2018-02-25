@@ -22,3 +22,66 @@ And that the functionality can be operated by everyone.
 [Web content Accessibility guidelines 2.0(wcag)](https://www.w3.org/TR/WCAG20/)
 
 ### Focus
+
+tabindex can be added to each html element if the tabindex = -1 you can use the `.focus()` to attract it's attention.
+
+Usefull for offscreen content this way when it opens the screen readers focus points to the offscreen element.
+
+##### example
+
+`document.querySelector('#modal').focus()`
+
+`tabindex="0"`
+_ in the natural tab order
+_ can be programmatically focused
+
+`<div id="dropdown" tabindex="0">Settings</div>`
+
+`tabindex="0"`
+_ in the natural tab order
+_ can be programmatically focused \* Anti-pattern!
+
+##### manage focus
+
+set header tabindex to -1 and only when that page has loaded the content add focus dynamically to the header element.
+
+#### skip link
+
+html markup example
+
+`<a href="#maincontent" class="skip-link">Skip to main content</a>
+
+<nav>
+    ...
+</nav>
+<main id="maincontent" tabindex="-1">
+    ...
+</main>
+`
+
+css markup example
+
+`.skip-link {
+position: absolute;
+top: -40px;
+left: 0;
+background: #bf1722;
+color: #fff;
+padding: 8px;
+z-index: 100;
+}
+
+.skip-link:focus {
+top: 0;
+}
+`
+
+#### Roving focus
+
+`<li tabindex="-1" checked>...</li>
+
+ <li tabindex="0">...</li> call focus and use setAttribute to move checked
+ <li tabindex="-1">...</li>
+ <li tabindex="-1">...</li>
+ <li tabindex="-1">...</li> go back to first element
+`
