@@ -49,19 +49,18 @@ set header tabindex to -1 and only when that page has loaded the content add foc
 
 html markup example
 
-`<a href="#maincontent" class="skip-link">Skip to main content</a>
-
+```<a href="#maincontent" class="skip-link">Skip to main content</a>
 <nav>
     ...
 </nav>
 <main id="maincontent" tabindex="-1">
     ...
 </main>
-`
+```
 
 css markup example
 
-`.skip-link {
+```.skip-link {
 position: absolute;
 top: -40px;
 left: 0;
@@ -74,14 +73,13 @@ z-index: 100;
 .skip-link:focus {
 top: 0;
 }
-`
+```
 
 #### Roving focus
 
-`<li tabindex="-1" checked>...</li>
-
+```<li tabindex="-1" checked>...</li>
  <li tabindex="0">...</li> call focus and use setAttribute to move checked
  <li tabindex="-1">...</li>
  <li tabindex="-1">...</li>
  <li tabindex="-1">...</li> go back to first element
-`
+```
