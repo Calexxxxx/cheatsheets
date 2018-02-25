@@ -89,3 +89,18 @@ css markup example
     <li tabindex="-1">...</li>
     <li tabindex="-1">...</li> go back to first element
 ```
+
+### ARIA
+
+[ARIA 1.1 spec](https://www.w3.org/TR/wai-aria-1.1/)
+
+example custom checkbox
+
+```
+<div tabindex="0" class="checkbox" checked role="checkbox" aria-checked="true">...</div>
+<div tabindex="0" class="checkbox" role="checkbox" aria-checked="false">...</div>
+```
+
+#### roles
+
+[ARIA roles(draft) 1.1](https://www.w3.org/TR/wai-aria-1.1/#roles)
