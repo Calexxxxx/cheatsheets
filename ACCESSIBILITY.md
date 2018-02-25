@@ -32,14 +32,16 @@ Usefull for offscreen content this way when it opens the screen readers focus po
 `document.querySelector('#modal').focus()`
 
 `tabindex="0"`
-_ in the natural tab order
-_ can be programmatically focused
+
+* in the natural tab order
+* can be programmatically focused
 
 `<div id="dropdown" tabindex="0">Settings</div>`
 
 `tabindex="0"`
-_ in the natural tab order
-_ can be programmatically focused \* Anti-pattern!
+
+* in the natural tab order
+* can be programmatically focused \* Anti-pattern!
 
 ##### manage focus
 
