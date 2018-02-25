@@ -41,7 +41,8 @@ Usefull for offscreen content this way when it opens the screen readers focus po
 `tabindex="0"`
 
 * in the natural tab order
-* can be programmatically focused \* Anti-pattern!
+* can be programmatically focused
+* Anti-pattern!
 
 ##### manage focus
 
